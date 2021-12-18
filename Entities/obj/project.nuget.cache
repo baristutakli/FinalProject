@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d4SoZ1WhMKFNRs8YjKGZ1AZZ5dvFoUWX//5ztpxBrCpwYUWn5fcu3ihWr2tYKosKAPuKwD9JOYxZUZgxjAamGA==",
+  "dgSpecHash": "XtXK0Swmb7qupFczaxg6SKXu2KAN46CKa2T8hdjAC2pVM5l2nfsswHahvCvcyXaLf26QvfMngxWJjbcZctGRKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

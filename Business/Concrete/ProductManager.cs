@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entities.DTOs;
+using Core.Utilities.Results;
 
 namespace Business.Concrete
 {
@@ -19,6 +20,14 @@ namespace Business.Concrete
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
+        }
+
+        public IResult Add(Product product)
+        {
+
+            // ürünü eklemeden önce kontrol edeceğimiz kuralları buraya yazarız
+            _productDal.Add(product);
+            return new Result(true, "Ürün eklendi");
         }
 
         public List<Product> getAll()
@@ -36,7 +45,10 @@ namespace Business.Concrete
             return _productDal.GetAll(p => p.CategoryId == id);
         }
 
-    
+        public Product getById(int productId)
+        {
+            return _productDal.Get(p => p.ProductId == productId);
+        }
 
         public List<Product> getByUnitPrice(decimal min, decimal max)
         {

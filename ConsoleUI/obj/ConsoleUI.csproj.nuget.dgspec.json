@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\Business.csproj": {
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\obj\\",
+        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -97,14 +97,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Business\\Business.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj"
               },
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -137,14 +137,14 @@
         }
       }
     },
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj": {
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\obj\\",
+        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -201,14 +201,14 @@
         }
       }
     },
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -229,11 +229,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -272,14 +272,14 @@
         }
       }
     },
-    "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -300,8 +300,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj"
+              "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj"
               }
             }
           }

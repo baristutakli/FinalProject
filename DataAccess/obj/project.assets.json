@@ -5745,11 +5745,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\kbez1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -5770,11 +5770,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Core\\Core.csproj"
+            "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Core\\Core.csproj"
             },
-            "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\Entities\\Entities.csproj"
+            "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XeoL8OKNgr5DgNjBz8PAVQ/cfQ5UnybcPBriiqxK4YsYMltpKg0GdBU7Wb27ZUWH55ewqWvpki4lr+5Y5z+yrQ==",
+  "dgSpecHash": "vlKiNEL5eAwm8TrZd1XLJzW/kGazbv6D6ozt8a+7gym6f7VqtlC2N/KV9fXBzKWK8/iGgPI1TzU/0zV8aF4uUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\Pratikler\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+  "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
