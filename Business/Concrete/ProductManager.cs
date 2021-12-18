@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Entities.DTOs;
 using Core.Utilities.Results;
+using Business.Constants;
 
 namespace Business.Concrete
 {
@@ -24,19 +25,25 @@ namespace Business.Concrete
 
         public IResult Add(Product product)
         {
-
+            // Business code
             // ürünü eklemeden önce kontrol edeceğimiz kuralları buraya yazarız
+            // static oluşturduğumuz messages dosyasından direk yenilemeden kullanabiliriz
+            // stringleri aşağıdaki gibi ayrı yarı yazmaya magic string denir.
+            if (product.ProductName.Length<2)
+            {
+                return new ErrorResult(Messages.ProductNameInvalid);
+            }
             _productDal.Add(product);
-            return new Result(true, "Ürün eklendi");
+            return new SuccessResult(Messages.ProductAdded);
         }
 
-        public List<Product> getAll()
+        public IDataResult<List<Product>> getAll()
         {
             // iş kodları varsa bunları yazıyoruz
             // bir iş sınıfı başka sınıfları dinlemesin
             // İş kolları
             // Yetkisi var mı?
-            return _productDal.GetAll();
+            return new DataResult<List<Product>( _productDal.GetAll(),true,"Ürünler listelendi");
         }
 
   

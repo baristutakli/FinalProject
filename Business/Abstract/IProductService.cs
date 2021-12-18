@@ -12,11 +12,12 @@ namespace Business.Abstract
     public interface IProductService
     {
         // iş katmanında kullanacağımız servis 
-        List<Product> getAll();
-        Product getById(int productId);
-        List<Product> getAllByCategory(int id);
-        List<Product> getByUnitPrice(decimal min, decimal max);
-        List<ProductDetailDto> getProductDetail();
+        // işlem sonucunun dışında mesaj ve durumu gönderiyoruz
+        IDataResult<List<Product>> getAll();
+        IDataResult<Product> getById(int productId);
+        IDataResult<List<Product>> getAllByCategory(int id);
+        IDataResult<List<Product>> getByUnitPrice(decimal min, decimal max);
+        IDataResult<List<ProductDetailDto>> getProductDetail();
         IResult Add(Product product);
     }
 }
