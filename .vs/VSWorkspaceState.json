@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Business",
+    "\\Business\\Abstract",
+    "\\Business\\Concrete",
+    "\\DataAccess",
+    "\\DataAccess\\Concrete",
+    "\\DataAccess\\Concrete\\EntityFramework",
+    "\\DataAccess\\Concrete\\InMemory",
+    "\\Entities",
+    "\\Entities\\Abstract"
+  ],
+  "SelectedNode": "\\DataAccess\\Concrete\\InMemory\\InMemoryProductDal.cs",
+  "PreviewInSolutionExplorer": false
+}
