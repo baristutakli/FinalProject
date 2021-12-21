@@ -11,6 +11,8 @@ namespace Business.Constants
         // çok dil destekleyen halini devarchitecture da var
         public static string ProductAdded = "Urun eklendi.";
         public static string ProductNameInvalid = "Ürün ismi geçersiz";
+        public static string MaintenanceTime = "Bakım zamanı";
+        public static string ProductListed = "Ürünler listelendi";
 
     }
 }
