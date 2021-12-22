@@ -27,15 +27,44 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet]
-        public List<Product> Get()
+        // çağırırken /product/getall şeklinde çağıracağız
+        // isim veriyoruz
+        [HttpGet("getall")]
+        public IActionResult GetAll()
         {
 
             // Dependency chain var
             // Iproducservice product manager a o da efproductdal a bağlı
             //IProductService productService = new ProductManager(new EfProductDal());
             var result = _productService.getAll();
-            return result.Data;
+            if (result.Success)
+            {
+                return Ok(result);// 200 döndürür, overload'ı da var. Veri de verebiliriz
+            }
+            return BadRequest(result.Message);// 400 ve mesajın kendisini gönderdik. İsteseydik mesaj da göndermeyebilirdik.
+        }
+
+
+        // Post requestlerde  data göndereceğin için
+        [HttpPost("add")]
+        public IActionResult Add(Product product)
+        {
+            var result = _productService.Add(product);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getbyid")]
+        public IActionResult GetById(int id)
+        {
+            var result = _productService.getById(id);
+            if (result.Success)
+            {
+                return Ok(result.Data);
+            }
+            return BadRequest(result.Message);
         }
     }
 }
