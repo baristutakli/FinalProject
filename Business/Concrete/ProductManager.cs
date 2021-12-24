@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using Entities.DTOs;
 using Core.Utilities.Results;
 using Business.Constants;
+using FluentValidation;
+using Business.ValidationRules.FluentValidation;
+using Core.CorssCuttingConcerns.Validation;
 
 namespace Business.Concrete
 {
@@ -28,11 +31,27 @@ namespace Business.Concrete
             // Business code
             // ürünü eklemeden önce kontrol edeceğimiz kuralları buraya yazarız
             // static oluşturduğumuz messages dosyasından direk yenilemeden kullanabiliriz
-            // stringleri aşağıdaki gibi ayrı yarı yazmaya magic string denir.
-            if (product.ProductName.Length<2)
-            {
-                return new ErrorResult(Messages.ProductNameInvalid);
-            }
+            // Validation: bir nesneyi iş kurallarına dahil etmek için uygun olup olmadıgını kontrol ederiz
+            // örn;minimum kaç karakter olabilir vs nesnenin yapısı ile ilgili
+
+            ////if (product.UnitPrice<=0)
+            ////{
+            ////    // buda validationdır
+            ////    return new ErrorResult(Messages.UnıtNameInvalid);
+            ////}
+            //// iş kuralı ise bizim işgereksinimlerimize uygunluk
+            //// örn; bir kişiye ehliyet vereceksiniz ona uygun olup olmadığını kontrol ettiğimiz
+            //// puanlarına bakmak vs 
+
+            //// stringleri aşağıdaki gibi ayrı yarı yazmaya magic string denir.
+            //if (product.ProductName.Length<2)
+            //{
+            //    return new ErrorResult(Messages.ProductNameInvalid);
+            //}
+            ValidationTool.Validate(new ProductValidator(),product);
+
+            // Business codes
+
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);
         }

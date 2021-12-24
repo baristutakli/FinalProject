@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XtXK0Swmb7qupFczaxg6SKXu2KAN46CKa2T8hdjAC2pVM5l2nfsswHahvCvcyXaLf26QvfMngxWJjbcZctGRKg==",
+  "dgSpecHash": "UdZEJG8WIDeItE95p+dqGEumyGiXBajnCpHxU5a1q2u7+5cVwVEvPo/swo03XG5w6Tx1f9OMJt7kcoQmBy0ANA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
