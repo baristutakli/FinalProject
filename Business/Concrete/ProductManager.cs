@@ -12,6 +12,7 @@ using Business.Constants;
 using FluentValidation;
 using Business.ValidationRules.FluentValidation;
 using Core.CorssCuttingConcerns.Validation;
+using Core.Aspects.Autofac.Validation;
 
 namespace Business.Concrete
 {
@@ -26,6 +27,7 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             // Business code
@@ -43,12 +45,7 @@ namespace Business.Concrete
             //// örn; bir kişiye ehliyet vereceksiniz ona uygun olup olmadığını kontrol ettiğimiz
             //// puanlarına bakmak vs 
 
-            //// stringleri aşağıdaki gibi ayrı yarı yazmaya magic string denir.
-            //if (product.ProductName.Length<2)
-            //{
-            //    return new ErrorResult(Messages.ProductNameInvalid);
-            //}
-            ValidationTool.Validate(new ProductValidator(),product);
+            
 
             // Business codes
 

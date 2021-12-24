@@ -123,9 +123,13 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Autofac.Extensions.DependencyInjection": {
+            "Autofac": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.3.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "FluentValidation": {
               "target": "Package",
