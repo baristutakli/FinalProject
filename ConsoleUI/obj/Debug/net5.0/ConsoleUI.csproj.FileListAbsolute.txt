@@ -140,3 +140,4 @@ C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ConsoleU
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ref\ConsoleUI.dll
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.pdb
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Autofac.dll

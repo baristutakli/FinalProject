@@ -31,15 +31,18 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // Autofact, Ninjet, CastleWinsor, structureMap, LightInject, DryInject-> Ioc Container
+            // bunlardan .net core da ve ücretsiz olduðu için Autofact kullanacaðýz
+            // Daha iyisi ise postsharp ama ücretli
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
             });
-            services.AddSingleton<IProductService,ProductManager>();// arka planda bir referans oluþturur
-            // örneðin bir productmanager isterse buraya bakýyor
-            // Baðýmlýlýklarý buradan belirtiyoruz
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>();// arka planda bir referans oluþturur
+            //// örneðin bir productmanager isterse buraya bakýyor
+            //// Baðýmlýlýklarý buradan belirtiyoruz
+            //services.AddSingleton<IProductDal, EfProductDal>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

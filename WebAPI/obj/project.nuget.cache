@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "btLXIvRhid17NesmVl37juk2b7NvXKbMwTS3LQ1FW/ImIWFaZb0Ng5kX4EB1eGwxnHe8lDUfjwXkMB+Rsbr5pQ==",
+  "dgSpecHash": "/9RIv9mc3/lWiNP+TZmBPbg9E/CdLweHZT8EUNmbBoG3GZdn3ig2P5GiEivDSGpTNIuIdMJH5SsVdDowR8tTIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

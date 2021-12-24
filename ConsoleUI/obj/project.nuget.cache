@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vlKiNEL5eAwm8TrZd1XLJzW/kGazbv6D6ozt8a+7gym6f7VqtlC2N/KV9fXBzKWK8/iGgPI1TzU/0zV8aF4uUQ==",
+  "dgSpecHash": "wr+/pKb1/RbbVpHrJQGYQyAZVMYJCEkOgC3M7RZmlYiXzhDhue+PDj3MKpmkgRd8aA0N5+6RYfivCodo05gxiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

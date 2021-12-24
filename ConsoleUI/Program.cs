@@ -16,12 +16,12 @@ namespace ConsoleUI {
             // DTO: Data transformation Object
             // Ioc
 
-            ProductManager productManager = new ProductManager(new EfProductDal());
-            foreach (var product in productManager.getAll())
-            {
-                Console.WriteLine(product.ProductName);
-            }
-            Console.WriteLine("Hello World!");
+            //ProductManager productManager = new ProductManager(new EfProductDal());
+            //foreach (var product in productManager.getAll())
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //}
+            //Console.WriteLine("Hello World!");
         }
     }
 }
