@@ -13,6 +13,7 @@ using FluentValidation;
 using Business.ValidationRules.FluentValidation;
 using Core.CorssCuttingConcerns.Validation;
 using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Business;
 
 namespace Business.Concrete
 {
@@ -39,18 +40,19 @@ namespace Business.Concrete
             ////if (product.UnitPrice<=0)
             ////{
             ////    // buda validationdır
-            ////    return new ErrorResult(Messages.UnıtNameInvalid);
+            ///w/    return new ErrorResult(Messages.UnıtNameInvalid);
             ////}
-            //// iş kuralı ise bizim işgereksinimlerimize uygunluk
+            //// iş kuralı ise bizim iş gereksinimlerimize uygunluk gösterir
             //// örn; bir kişiye ehliyet vereceksiniz ona uygun olup olmadığını kontrol ettiğimiz
             //// puanlarına bakmak vs 
 
-            
-
             // Business codes
+            BusinessRules.Run(CheckIfProductExists(product.ProductName),
+                CheckIfProductCountOfCategory(product.CategoryId));
+           
 
-            _productDal.Add(product);
-            return new SuccessResult(Messages.ProductAdded);
+
+            return new ErrorResult();
         }
 
         public IDataResult<List<Product>> getAll()
@@ -86,6 +88,33 @@ namespace Business.Concrete
         public IDataResult<List<ProductDetailDto>> getProductDetail()
         {
            return new SuccessDataResult<List<ProductDetailDto>>(_productDal.getProductDetail());
+        }
+
+
+        /// <summary>
+        /// * Bu bir iş kuralı parçacığıdır. Bir kategoride en fazla kaç ürün var onu doğruluyoruz
+        /// </summary>
+        /// <param name="CategoryID"></param>
+        /// <returns></returns>
+        private IResult CheckIfProductCountOfCategory(int CategoryID)
+        {
+            var result = _productDal.GetAll(p => p.CategoryId == CategoryID).Count;
+            if (result>=15)
+            {
+                return new ErrorResult(Messages.ProductCountOfCategoryError);
+
+            }
+            return new SuccessResult();
+        }
+        private IResult CheckIfProductExists(String productName)
+        {
+            var result = _productDal.GetAll(p => p.ProductName == productName).Any();
+            if (result)
+            {
+                return new ErrorResult(Messages.ProductNameAlreadyExists);
+
+            }
+            return new SuccessResult();
         }
     }
 }

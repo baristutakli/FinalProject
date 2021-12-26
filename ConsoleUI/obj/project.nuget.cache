@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4pIQP1b/sNKXIzMKN0eBS7t65zZO+bHQWJkjGdlwhf3kDYyYXjLdUOBKRVHb22az3MT6lcr34w5PVM7eLtqMwA==",
+  "dgSpecHash": "b1VEo5q70rV+r3/WbXpGsTBUZApaM0wZ1foyl9rbPRMFF/n0IIghLum4GZGNzNQltio9hLUFe5Xgl+CW9edqqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kbez1\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

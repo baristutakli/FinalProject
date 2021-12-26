@@ -23,8 +23,8 @@ namespace Business.DependencyResolvers.Autofact
         protected override void Load(ContainerBuilder builder)
         {
             // Biri I product service isterse ona product manager verir
-            builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
-            builder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
+            // builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
+            // builder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()

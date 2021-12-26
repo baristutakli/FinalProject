@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+O7Yw3Wzegpo+Pg7FTf+6VcrNKrL3Sv+5ivV+XqVI/NslbxkZGtvkRANdILekIGPBqKlYaSImZtQwb5d7srfJg==",
+  "dgSpecHash": "FXUdtstqoLxV0WhWM2iHcYL/nbWwVQ6O2eZCamBjNZy3rt+IsyWAwdlxHTzpP2fQmwTaiVSFhYWYRrFgHLKKqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kbez1\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

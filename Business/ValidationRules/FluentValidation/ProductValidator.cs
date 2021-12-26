@@ -21,6 +21,7 @@ namespace Business.ValidationRules.FluentValidation
             // örneğin olmayan bir şeyi de kendimiz yazabiliriz
             // Ozel bir mesaj vermek istersek withmessagekullanırız
             RuleFor(p => p.ProductName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı");// StartWithA bizim metodumuz
+           
         }
 
         private bool StartWithA(string arg)
