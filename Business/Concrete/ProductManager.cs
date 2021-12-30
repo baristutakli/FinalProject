@@ -22,20 +22,27 @@ namespace Business.Concrete
         // Soyut nesne ile erişim sağlayacağız
         // Bu katmanda asla ınmemory veya entites direk çağırma
         IProductDal _productDal;
+        ICategoryService _categoryService;// Productan bağımzı olduğu için sevice ekledik
 
-        public ProductManager(IProductDal productDal)
+        // Dikkat bir Entity Manager kendisi hariç başka bir varlığı Constructor'a  varlık eklenemez
+        public ProductManager(IProductDal productDal, ICategoryService categoryService)
         {
             _productDal = productDal;
+            _categoryService = categoryService;
         }
-
+        // Yetkilendirmeyi JWT kullanarak yapacağız
+        // Şimdilik yetki dediğimiz yapılara claim diyoruz
+        // Herhangi bir token yoksa uygulamamız ona senin yetkin yok diyecektir
+        // "product.add,editor" ekelem yetkisi olan  birine sahip olması gerekiyor
+        [SecuredOperation("product.add")] // Bu metodu çağıran kişinin yetkisini ayrı ayrı yapabiliriz
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             // Business code
-            // ürünü eklemeden önce kontrol edeceğimiz kuralları buraya yazarız
+            // Urünü eklemeden önce kontrol edeceğimiz kuralları buraya yazarız
             // static oluşturduğumuz messages dosyasından direk yenilemeden kullanabiliriz
             // Validation: bir nesneyi iş kurallarına dahil etmek için uygun olup olmadıgını kontrol ederiz
-            // örn;minimum kaç karakter olabilir vs nesnenin yapısı ile ilgili
+            // Örneğin;minimum kaç karakter olabilir vs nesnenin yapısı ile ilgili
 
             ////if (product.UnitPrice<=0)
             ////{
@@ -47,14 +54,34 @@ namespace Business.Concrete
             //// puanlarına bakmak vs 
 
             // Business codes
-            BusinessRules.Run(CheckIfProductExists(product.ProductName),
+            IResult result = BusinessRules.Run(CheckIfProductExists(product.ProductName),
                 CheckIfProductCountOfCategory(product.CategoryId));
-           
 
-
+            if (result!=null)
+            {
+                return result;
+            }
+            _productDal.Add(product);
             return new ErrorResult();
         }
 
+
+        /*
+         * Bir veriyi karşı taraf okuyamasın diye yapılan çalışmalardır
+         *Encription: 
+         *Hashing: veri tabanındaki parolayı açıkta tutabiliriz ama açık tutmak yerine onları hash leriz.
+         *Örneğin;1234@1234 parolasını MD5, SHA1 gibi şifreleme algoritmaları vasıtasıyla geri dönüşü olmayacak şekilde hashlenirler.
+         * Bunun sonucunda BDSDXc-sadsfas-asdas seklinde tutarız.
+         * Kullanıcı bir mail ve şifre gidiğinde parolayı şifreledikten sonra onu hash liyoruz 
+         * Eğer veri tabanında aynı hash  varsa izin veriyoruz. Hash karşılaştırması gerçekleştiriyoruz.
+         * 
+         * Bir kişinin girdiği değere kendimiz bir şeyler ekleyerek hash liyoruz
+         * Bu şekilde kullanıcının girdiği parolayı biraz daha güçlendirmiş oluyoruz.
+         * Encription: geri dönüşü olan veridir. Girdiğimiz dahayı encript ce decriypte edebiliriz.
+         * Bunu yapabilmek için neyle ve nasıl çözdüğümüzü bilmemiz gerekir.
+         * Key varsa o anahtarı 
+         *
+         */
         public IDataResult<List<Product>> getAll()
         {
             // iş kodları varsa bunları yazıyoruz
