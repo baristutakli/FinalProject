@@ -14,6 +14,7 @@ using Business.ValidationRules.FluentValidation;
 using Core.CorssCuttingConcerns.Validation;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
+using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
@@ -34,7 +35,7 @@ namespace Business.Concrete
         // Şimdilik yetki dediğimiz yapılara claim diyoruz
         // Herhangi bir token yoksa uygulamamız ona senin yetkin yok diyecektir
         // "product.add,editor" ekelem yetkisi olan  birine sahip olması gerekiyor
-        [SecuredOperation("product.add")] // Bu metodu çağıran kişinin yetkisini ayrı ayrı yapabiliriz
+        [SecuredOperation("product.add,admin")] // Bu metodu çağıran kişinin yetkisini ayrı ayrı yapabiliriz
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {

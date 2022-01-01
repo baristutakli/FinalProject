@@ -141,3 +141,12 @@ C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ref\Cons
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.pdb
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
 C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Autofac.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\kbez1\Documents\kodlar\FinalProject\ConsoleUI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

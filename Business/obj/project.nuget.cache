@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mKqk0OBhyF7RcfS1vf1bYlBXsBI1gE0OxgepkMtgOQOh3priEltYpCNP2AAfy6cZZ2ZGvdmrJjlZhzXnNyr9Aw==",
+  "dgSpecHash": "urkGCbC/ZhMq6czcYfJhQflTMBg9poLbDa8A4Yk7h2Y3byafOJvKPT9vLb7zLSoDzja80KUVkaBAxK4rQjj9RA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kbez1\\Documents\\kodlar\\FinalProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
@@ -23,8 +23,8 @@
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
-    "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
-    "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\kbez1\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
