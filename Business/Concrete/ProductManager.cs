@@ -16,6 +16,9 @@ using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
 using Business.BusinessAspects.Autofac;
 using Core.Aspects.Autofac.Caching;
+using System.Transactions;
+using Core.Aspects.Autofac.Transaction;
+using Core.Aspects.Autofac.Performance;
 
 namespace Business.Concrete
 {
@@ -38,6 +41,7 @@ namespace Business.Concrete
         // "product.add,editor" ekelem yetkisi olan  birine sahip olması gerekiyor
         [SecuredOperation("product.add,admin")] // Bu metodu çağıran kişinin yetkisini ayrı ayrı yapabiliriz
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Product product)
         {
             // Business code
@@ -65,6 +69,33 @@ namespace Business.Concrete
             }
             _productDal.Add(product);
             return new ErrorResult();
+        }
+        [TransactionScopeAspect]
+        public IResult AddTransactionTest(Product product)
+        {
+            //using (TransactionScope scope = new TransactionScope())
+            //{
+            //    try
+            //    {
+            //        Add(product);
+            //        if (product.UnitPrice < 10)
+            //        {
+            //            throw new Exception("");
+            //        }
+            //        Add(product);
+            //        //Bu işlemler gerçekleştirilirse scope u tamamlıyoruz yoksa bitiriyoruz
+            //        scope.Complete();
+            //    }
+            //    catch (Exception)
+            //    {
+
+            //        scope.Dispose();
+            //    }
+            //}
+
+            //// ekledi sonra hata alırsa add product işlemini de geriye alıyoruz
+           
+            return null;
         }
 
 
@@ -107,6 +138,8 @@ namespace Business.Concrete
         }
 
         [CacheAspect]
+        [PerformanceAspect(5)]// Örneğin beş saniye geçince beni uyar bir sorun var neden yavaşlamış bakalım
+
         public IDataResult<Product> getById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
@@ -120,6 +153,14 @@ namespace Business.Concrete
         public IDataResult<List<ProductDetailDto>> getProductDetail()
         {
            return new SuccessDataResult<List<ProductDetailDto>>(_productDal.getProductDetail());
+        }
+
+        [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
+        public IResult Update(Product product)
+        {
+            
+            throw new NotImplementedException();
         }
 
 

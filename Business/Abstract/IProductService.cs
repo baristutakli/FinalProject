@@ -19,5 +19,15 @@ namespace Business.Abstract
         IDataResult<List<Product>> getByUnitPrice(decimal min, decimal max);
         IDataResult<List<ProductDetailDto>> getProductDetail();
         IResult Add(Product product);
+        IResult Update(Product product);
+
+        /// <summary>
+        /// Uygulamalarda tutarlılığı korumak için kullandığımız bir yöntem. Örneğin, bir hesaptan başka bir hesaba para gönderme
+        /// Eğer bu işlem sırasında bir hata olursa paranın geri alınmasını sağlayan yöntem
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        IResult AddTransactionTest(Product product);
+
     }
 }
