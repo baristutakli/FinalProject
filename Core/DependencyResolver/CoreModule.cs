@@ -1,4 +1,6 @@
-﻿using Core.Utilities.IoC;
+﻿using Core.CorssCuttingConcerns.Caching;
+using Core.CorssCuttingConcerns.Caching.Microsoft;
+using Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,7 +19,10 @@ namespace Core.DependencyResolver
         /// <param name="serviceCollection"></param>
         public void Load(IServiceCollection serviceCollection)
         {
+            serviceCollection.AddMemoryCache();// memory cahche karşılığı
+            // redis e geçersen yapacağın hareket sadece momort yerine redis yazmak
             serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            serviceCollection.AddSingleton<ICacheManager, MemoryCacheManager>();
         }
     }
 }

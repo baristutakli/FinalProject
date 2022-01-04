@@ -15,6 +15,7 @@ using Core.CorssCuttingConcerns.Validation;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
 using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
 
 namespace Business.Concrete
 {
@@ -83,6 +84,8 @@ namespace Business.Concrete
          * Key varsa o anahtarı 
          *
          */
+
+        [CacheAspect]// key,value 
         public IDataResult<List<Product>> getAll()
         {
             // iş kodları varsa bunları yazıyoruz
@@ -103,6 +106,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id));
         }
 
+        [CacheAspect]
         public IDataResult<Product> getById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
